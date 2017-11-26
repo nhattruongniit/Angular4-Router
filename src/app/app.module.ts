@@ -1,63 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }    from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AngularFireModule } from 'angularfire2'
-import { AngularFireAuthProvider } from 'angularfire2/auth';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { RouterModule, Routes } from '@angular/router';
 
-// routing
-import { AppRoutingModule }  from './app.routing';
-
-// database
-import { DataService } from './services/data.service';
-
-// component
-import { HeaderComponent } from './header/header.component';
-import { asidemenuComponent } from './aside-menu/aside-menu.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { EmployeeComponent } from './employee/employee.component';
+
+const routes: Routes = [
+  { path: '', loadChildren: './client/client.module#ClientModule' },
+  { path: 'admin', loadChildren: './admin/admin.module#AdminModule' }
+];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    asidemenuComponent,
-    HomeComponent,
-    AboutComponent,
-    PageNotFoundComponent,
-    LoginComponent,
-    RegisterComponent,
-    EmployeeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpModule,
-    AngularFireModule.initializeApp({
-      apiKey: "AIzaSyB8LCtvQkQ6W4PCouTqMctPTELT1ATgGTs",
-      authDomain: "gianty-cms.firebaseapp.com",
-      databaseURL: "https://gianty-cms.firebaseio.com",
-      projectId: "gianty-cms",
-      storageBucket: "gianty-cms.appspot.com",
-      messagingSenderId: "1075282097542"
-    })
+    RouterModule.forRoot(routes)
   ],
-  providers: [
-    AngularFireAuthProvider,
-    DataService,
-    AngularFireDatabase
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  // constructor(router: Router) {
-  //   //console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
-  // }
-}
+export class AppModule { }

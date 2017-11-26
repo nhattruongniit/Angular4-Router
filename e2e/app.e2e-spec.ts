@@ -1,10 +1,10 @@
-import { MyAppPage } from './app.po';
+import { DemoRouterMenuPage } from './app.po';
 
-describe('my-app App', () => {
-  let page: MyAppPage;
+describe('demo-router-menu App', () => {
+  let page: DemoRouterMenuPage;
 
   beforeEach(() => {
-    page = new MyAppPage();
+    page = new DemoRouterMenuPage();
   });
 
   it('should display welcome message', () => {
