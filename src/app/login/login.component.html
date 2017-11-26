@@ -1,0 +1,22 @@
+<section id="login">
+    <div class="logo"><img src="./assets/images/logo.png" title="Logo" alt="Logo" /></div>
+    <form name="loginForm" (ngSubmit)="loginFunc(loginForm.value.Email, loginForm.value.password)" #loginForm="ngForm" novalidate>
+        <h2>Login</h2>
+        <div class="form-group" [ngClass]="{ 'has-error': loginForm.submitted && !Email.valid }">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email" class="input" required [(ngModel)]="model.Email" #Email="ngModel">
+            <div *ngIf="loginForm.submitted && !Email.valid" class="help-block">Email is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': loginForm.submitted && !password.valid }">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="input" required [(ngModel)]="model.password" #password="ngModel">
+            <div *ngIf="loginForm.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+        <p class="forgetmenot">
+            <!--<label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" > Remember Me</label>-->
+            <input type="submit" class="button" value="Log In" />
+            <!--<span>|</span>
+            <a routerLink="/register">Register</a>-->
+        </p>
+    </form>
+</section>

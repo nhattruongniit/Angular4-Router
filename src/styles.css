@@ -1,0 +1,361 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-size: 16px;
+    color: #c8c7ce;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+
+main {
+    background-color: #212337;
+    height: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    color: #c8c7ce;
+    text-decoration: none;
+    outline: none;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.text__color--default {
+    color: #c8c7ce;
+}
+
+.navbar-default {
+    border: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+#wrapper {
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+#wrapper.visible {
+    margin-left: 300px;
+}
+
+h2 {
+    color: #333;
+    margin: 0px 0px 20px 0px;
+}
+
+
+/*=== page login ===*/
+
+.logo {
+    text-align: center;
+}
+
+#login {
+    width: 350px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+#login form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 26px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+#login form label {
+    color: #72777c;
+    font-size: 14px;
+    width: 100%;
+}
+
+#login form .input {
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    color: #32373c;
+    outline: 0;
+    -webkit-transition: 50ms border-color ease-in-out;
+    transition: 50ms border-color ease-in-out;
+}
+
+#login form .input:focus {
+    border-color: #66449f;
+    -webkit-box-shadow: 0 0 2px rgba(102, 68, 159, .8);
+    box-shadow: 0 0 2px rgba(102, 68, 159, .8);
+}
+
+#login form .input,
+#login input[type=text] {
+    font-size: 24px;
+    width: 100%;
+    padding: 3px;
+    margin: 2px 6px 0px 0;
+    background: #fbfbfb;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out;
+}
+
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+    border-color: #6e4ba8;
+    -webkit-box-shadow: 0 0 2px rgba(102, 68, 159, .8);
+    box-shadow: 0 0 2px rgba(102, 68, 159, .8);
+    outline: 0;
+}
+
+input[type=radio]:checked:before,
+input[type=checkbox]:checked:before {
+    float: left;
+    vertical-align: middle;
+    width: 14px;
+    font: 400 16px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+
+input[type=checkbox]:checked:before {
+    content: "✔";
+    color: #6e4ba8;
+}
+
+#login form .button {
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #6e4ba8;
+    border-color: #6e4ba8 #6e4ba8 #6e4ba8;
+    -webkit-box-shadow: 0 1px 0 #6e4ba8;
+    box-shadow: 0 1px 0 #6e4ba8;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #6e4ba8, 1px 0 1px #6e4ba8, 0 1px 1px #6e4ba8, -1px 0 1px #6e4ba8;
+}
+
+#login form .button:focus {
+    background: #7753b2;
+    border-color: #7753b2;
+}
+
+#login .forgetmenot {
+    margin: 20px 0px 0px 0px;
+    text-align: right;
+}
+
+#login .forgetmenot a {
+    color: #72777c;
+    font-size: 14px;
+}
+
+#login .forgetmenot span {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#login form .has-error .input {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.help-block {
+    font-size: 13px;
+}
+
+
+/*=== navbar toogle ===*/
+
+.navbar-toggle {
+    margin: 0px;
+    padding: 16px 0px 0px 0px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #9b98ac;
+}
+
+
+/*=== header ===*/
+
+header {
+    background-color: #353058;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.header__line {
+    height: 30px;
+    border-right: 1px solid #5c5877;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 20px;
+}
+
+.icon--user {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon--user span {
+    margin-left: 10px;
+}
+
+.icon--logout {
+    background: url(/assets/images/spirtesheet.png) no-repeat 0px -214px;
+    cursor: pointer;
+    width: 20px;
+    height: 22px;
+    text-indent: -9999px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*=== aside ===*/
+
+aside {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    top: 0px;
+    border-right: 4px solid #212337;
+    background-color: #333152;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+aside.visible {
+    left: 0px;
+}
+
+.aside__top {
+    height: 63px;
+    line-height: 60px;
+    background-color: #36315a;
+    border-bottom: 4px solid #212337;
+    padding: 0px 30px;
+}
+
+.aside__middle {
+    background-color: #333152;
+    margin: 30px 0px 0px 0px;
+    padding: 0 30px;
+}
+
+.aside__middle nav ul {
+    list-style: none;
+}
+
+.aside__middle nav ul li a {
+    display: block;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.aside__middle nav ul li a span.arrow {
+    background: url(/assets/images/spirtesheet.png) no-repeat 0px 0px;
+    width: 16px;
+    height: 11px;
+    float: right;
+    margin-top: 6px;
+}
+
+.aside__middle nav ul li a.active span.arrow {
+    background-position: 0px -22px;
+}
+
+.aside__middle nav ul li ul.subMenu {
+    display: none;
+}
+
+.aside__middle nav ul li ul.subMenu li {
+    margin: 0px;
+}
+
+.aside__middle nav ul li ul.subMenu li a {
+    padding-left: 35px;
+    color: #c4bcff;
+    font-size: 16px;
+}
+
+.aside__middle nav ul li ul li.subMenu--profile a {
+    background: url(/assets/images/spirtesheet.png) no-repeat 0px -36px;
+}
+
+.aside__middle nav ul li ul li.subMenu--privacy a {
+    background: url(/assets/images/spirtesheet.png) no-repeat 0px -76px;
+}
+
+.aside__middle nav ul li ul li.subMenu--portfolio a {
+    background: url(/assets/images/spirtesheet.png) no-repeat 0px -119px;
+}
+
+
+/* === Responive ===*/
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
